@@ -1,0 +1,9 @@
+{
+        "CUSTOM - Remove GAcc, Wipe PoGo Data, GrantPerms, Reboot":
+        [
+                {
+                        "TYPE": "jobType.PASSTHROUGH",
+                        "SYNTAX": "am force-stop com.nianticlabs.pokemongo && pm clear com.nianticlabs.pokemongo && pm grant com.nianticlabs.pokemongo android.permission.GET_ACCOUNTS && pm grant com.nianticlabs.pokemongo android.permission.ACCESS_FINE_LOCATION && pm grant com.nianticlabs.pokemongo android.permission.CAMERA && cd /data/system/sync && rm accounts.xml && cd /data/system_de/0/ && rm accounts_de.db && cd /data/system_ce/0/ && rm accounts_ce.db && reboot"
+                }
+        ]
+}
